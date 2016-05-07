@@ -1,0 +1,9 @@
+{% include header.html %}
+
+<div class="post">
+  <h1 class= "post_title">{{ page.title }}</h1>
+  <h4>{{ page.date | date: '%B %d, %Y' }}</h4>
+  {{ content }}
+</div>
+
+{% include footer.html %}
